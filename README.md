@@ -5,5 +5,5 @@ Il s'emblerait y avoir une erreur à la ligne 249 "sprintf(chemin, "Athlete/%s.t
 Nous n'avons pas trouvé de solution au niveau de nom des fichiers, c'est à dire que l'utilisateur doit écrire "athlete.txt" au lieu de "athlete".
 Ce sont les 2 point négatifs de notre programme.
 Nous avons utilisez un dossier grâce à la bibliothèque dirent, nommé "Athlete" avec tous les fichiers des athletes afin d'avoir un aspect plus organisé dans notre programme.
-Nous vons préféré créer une quinzaine de fichiers au préalable pour éviter à l'utilisateur de creer lui même car cela prendrais beaucoup de temps.De plus nous avons eu l'idée de lui proposer des noms d'athlete exeptionnels pour lui eviter d'en chercher.
+Nous avons préféré créer une quinzaine de fichiers au préalable pour éviter à l'utilisateur de creer lui même car cela prendrais beaucoup de temps.De plus nous avons eu l'idée de lui proposer des noms d'athlete exeptionnels pour lui eviter d'en chercher.
 
