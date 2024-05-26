@@ -246,7 +246,7 @@ void meilleursAthletes(enum Epreuves epreuve) {
         // Vérifie que l'entrée est un fichier régulier
         if (entry->d_type == DT_REG) {
             char chemin[150];
-            sprintf(chemin, "Athlete/%s", entry->d_name);
+            sprintf(chemin, "Athlete/%s.txt", entry->d_name);
             FILE *fichier = fopen(chemin, "r");
             if (fichier == NULL) {
                 printf("Erreur lors de l'ouverture du fichier %s.\n", chemin);//verifie que le fichier existe
@@ -318,7 +318,7 @@ void gestionAthlete() {
             }
             rewinddir(dossier);//remet le pointeur au début
             char nomFichier[100];
-            printf("\nVeuillez choisir un athlète : ");
+            printf("\nVeuillez choisir un athlète.txt : ");
             fgets(nomFichier, sizeof(nomFichier), stdin);
             nomFichier[strcspn(nomFichier, "\n")] = 0; // Supprime le caractère de nouvelle ligne
             char chemin[150];
@@ -362,7 +362,7 @@ void gestionAthlete() {
                             printf("Entrez la position du joueur (1-4) : ");
                             scanf("%d", &epreuve.position);
                             getchar();
-                            printf("Entrez les noms des autres joueurs (un par ligne) : ");
+                            printf("Entrez les noms des autres joueurs.txt (un par ligne) : ");
                             for (int i = 0; i < 4; i++) {
                                 printf("Nom du joueur %d: ", i + 1);
                                 fgets(epreuve.equipe[i], sizeof(epreuve.equipe[i]), stdin);
